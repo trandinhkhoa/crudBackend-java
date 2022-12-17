@@ -67,3 +67,14 @@ A Quarkus extension is simply a module that can run on top of a Quarkus applicat
 
 - When using MongoDB (the issue does not have anything to do with mongodb, just mentioning it to remember when I did this): resteasy-reactive is not enough. Need jackson for json deserialization/se.
   - also, dont need to add extension, just add the dependency in pom.xml (which is what the quarkus extension does anyway)
+
+
+maven
+
+mvn help:effective-pom
+show the real pom.xml : including parent pom.xml. Will show all installed plugins as well, etc
+
+mvn help:describe -DgroupId=io.quarkus -DartifactId=quarkus-maven-plugin
+describe a plugin
+
+maven generate api from code https://quarkus.io/guides/openapi-swaggerui
